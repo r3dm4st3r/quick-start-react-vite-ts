@@ -32,6 +32,12 @@ npm start
 npm run build
 ```
 
+#### Build Preview
+
+```
+npm run preview
+```
+
 #### Check for code errors
 
 ```

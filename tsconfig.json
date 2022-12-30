@@ -44,10 +44,12 @@
   },
   "include": [
     "src",
+    "src/types/declaration.d.ts",
+    "vite.config.ts",
+    "postcss.config.js",
     ".eslintrc.js",
     ".prettierrc",
-    "postcss.config.js",
-    "vite.config.ts"
+    ".svgrrc.js"
   ],
   "exclude": [
     "node_modules"
