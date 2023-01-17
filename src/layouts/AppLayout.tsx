@@ -1,14 +1,20 @@
+import { lazy, Suspense } from 'react';
 import { Outlet } from 'react-router-dom';
-import Header from '../components/common/Header';
-import Footer from '../components/common/Footer';
+
+const Header = lazy(() => import('../components/common/Header'))
+const Footer = lazy(() => import('../components/common/Footer'))
 
 const AppLayout = () => (
   <>
-    <Header />
+    <Suspense fallback="loading...">
+      <Header />
+    </Suspense>
     <main role="main" className="min-h-[calc(100vh-103px)]">
       <Outlet />
     </main>
-    <Footer />
+    <Suspense fallback="loading...">
+      <Footer />
+    </Suspense>
   </>
 );
 

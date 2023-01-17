@@ -1,7 +1,7 @@
 import { Icon } from '@iconify/react';
 
 const Footer = () => (
-  <footer className="sticky top-0 left-0 right-0 bg-white shadow drop-shadow-sm px-4 py-3">
+  <footer className="sticky top-0 left-0 right-0 bg-white dark:bg-dark-100 shadow drop-shadow-sm px-4 py-3">
     <nav className="w-full">
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-3">

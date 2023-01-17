@@ -41,7 +41,7 @@ const features: Feat[] = [
 ];
 const Home = () => {
   return (
-    <section className="py-5">
+    <section className="py-5 dark:bg-dark-200 dark:text-light-100">
       <div className="container">
         <div className="grid grid-cols-1">
           <div className="flex items-center gap-3 mb-5">
@@ -56,7 +56,7 @@ const Home = () => {
             return (
               <div
                 key={i}
-                className="flex flex-col items-center justify-center justify-between text-center gap-5 rounded items-center bg-white shadow drop-shadow p-5 md:p-8"
+                className="flex flex-col items-center justify-center justify-between text-center gap-5 rounded items-center bg-white dark:bg-dark-100 shadow drop-shadow p-5 md:p-8"
               >
                 <span className="text-2xl">
                   <Icon width={50} height={50} icon={feature.icon} />

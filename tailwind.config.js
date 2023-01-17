@@ -11,7 +11,21 @@ module.exports = {
       colors: {
         danger: '#d72b01',
         success: '#06ad4a',
-        theme: '#f55d12'
+        theme: '#f7641a',
+        light: {
+          100: '#c4c4c4',
+          200: '#cdc7c7',
+          300: '#e2dada',
+          400: '#f1f1f1',
+          500: '#fff'
+        },
+        dark: {
+          100: '#313131',
+          200: '#292929',
+          300: '#28292b',
+          400: '#24262d',
+          500: '#000'
+        }
       },
       fontWeight: {
         normal: 400,
