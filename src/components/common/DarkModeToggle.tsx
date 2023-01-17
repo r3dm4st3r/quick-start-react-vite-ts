@@ -2,7 +2,7 @@ import { Icon } from '@iconify/react';
 import { useAppDispatch, useAppSelector } from '../../redux/store';
 import { TRIGGER_DARK_MODE } from '../../redux/actions/config/config.actions';
 import { DARK_MODE } from '../../redux/reducers/config/app/app.slice';
-import { useEffectOnce, useUpdateEffect } from 'react-use';
+import { useSingleEffect, useUpdateEffect } from 'react-haiku';
 
 const DarkModeToggle = () => {
   const dispatch = useAppDispatch();
@@ -23,7 +23,7 @@ const DarkModeToggle = () => {
     }
   }, [darkMode]);
 
-  useEffectOnce(() => {
+  useSingleEffect(() => {
     dispatch(TRIGGER_DARK_MODE(isLocal === 'true'));
   });
 
