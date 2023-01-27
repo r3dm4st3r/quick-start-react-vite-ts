@@ -9,12 +9,12 @@ const Header = () => (
       </div>
       <ul className="flex items-center justify-end gap-3">
         <li>
-          <DarkModeToggle />
-        </li>
-        <li>
           <NavLink className="font-bold" to="/about">
             About
           </NavLink>
+        </li>
+        <li>
+          <DarkModeToggle />
         </li>
       </ul>
     </nav>

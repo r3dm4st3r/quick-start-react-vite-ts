@@ -1,5 +1,5 @@
 @layer components {
-  .body {
-    @apply relative w-full bg-gray-200 scroll-smooth;
-  }
+    .body {
+        @apply relative w-full  dark:bg-dark-200 dark:text-light-100 scroll-smooth;
+    }
 }

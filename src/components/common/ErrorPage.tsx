@@ -5,7 +5,7 @@ const ErrorPage = () => {
   const navigate = useNavigate();
   return (
     <div className="min-h-[calc(100vh-120px)] flex items-center justify-center">
-      <div className="mx-auto max-w-[550px] p-10 bg-white shadow drop-shadow-sm">
+      <div className="mx-auto max-w-[550px] p-10 bg-white dark:bg-dark-100 shadow drop-shadow-sm">
         <div className="text-center">
           <span className="text-6xl flex justify-center mb-3">
             <Icon icon="clarity:error-standard-line" />
